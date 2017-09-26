@@ -71,7 +71,7 @@ function setup() {
 
      fill(255);
      noStroke();
-     text(hr + ':' + mn + ':' + sc, 10, 200);
+     text(hr%12 + ':' + mn + ':' + sc, 0, 350);
 
 
  }
