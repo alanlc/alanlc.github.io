@@ -69,9 +69,9 @@ function setup() {
    point(0, 0);
 
 
-   //  fill(255);
-   //  noStroke();
-   //  text(hr + ':' + mn + ':' + sc, 10, 200);
+     fill(255);
+     noStroke();
+     text(hr + ':' + mn + ':' + sc, 10, 200);
 
 
  }
