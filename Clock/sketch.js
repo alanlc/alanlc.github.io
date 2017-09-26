@@ -34,7 +34,7 @@ function setup() {
    fill(150,100,255);
    strokeWeight(2);
    arc(-100, 400, 88, 88, -1*(180 + (minuteAngle/2)), (180 + (minuteAngle/2)), CHORD);
-   arc(100, 400, 88, 88,((minuteAngle/2))%180, (-1*(minuteAngle/2))%180, CHORD);
+   arc(100, 400, 88, 88,((minuteAngle/2))%179, (-1*(minuteAngle/2))%179, CHORD);
 
    //HOURS
    strokeWeight(8);
@@ -45,7 +45,7 @@ function setup() {
    fill(150,255,100);
    strokeWeight(2);
    arc(-100, 500, 88, 88, -1*(180 + (minuteAngle/2)), (180 + (minuteAngle/2)), CHORD);
-   arc(100, 500, 88, 88,((minuteAngle/2))%180, (-1*(minuteAngle/2))%180, CHORD);
+   arc(100, 500, 88, 88,((minuteAngle/2))%179, (-1*(minuteAngle/2))%179, CHORD);
      
    push();
    rotate(secondAngle);
