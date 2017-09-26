@@ -6,17 +6,23 @@ function setup() {
  function draw() {
    background(0);
    translate(200, 200);
-   //fill(255);
-   //noStroke();
-   //text(hr%12 + ':' + mn + ':' + sc, 0, 350);
-
-
-   rotate(-90);
-
+     
+     
    let hr = hour();
    let mn = minute();
    let sc = second();
    var MilSec = millis();
+
+   fill(255,255,255);
+   noStroke();
+   textSize(22);
+   text((hr%12) + ':' + mn + ':' + sc, -42, -175);
+    text((hr%12), 288, 0);
+   text(mn, 388, 0);
+        text(sc, 488, 0);
+
+
+        rotate(-90);
 
      
    //SECONDS
@@ -27,8 +33,8 @@ function setup() {
    arc(0, 0, 300, 300, 0, secondAngle);
    strokeWeight(2);
    fill(255,100,150);
-   arc(-100, 300, 88, 88, -1*(180 + (secondAngle/2)), (180 + (secondAngle/2)), CHORD);
-   arc(100, 300, 88, 88,((secondAngle/2))%180, (-1*(secondAngle/2))%180, CHORD);
+   arc(-77, 500, 88, 88, -1*(180 + (secondAngle/2)), (180 + (secondAngle/2)), CHORD);
+   arc(77, 500, 88, 88,((secondAngle/2))%180, (-1*(secondAngle/2))%180, CHORD);
 
    //MINUTES
    strokeWeight(8);
@@ -38,8 +44,8 @@ function setup() {
    arc(0, 0, 280, 280, 0, minuteAngle);
    fill(150,100,255);
    strokeWeight(2);
-   arc(-100, 400, 88, 88, -1*(180 + (minuteAngle/2)), (180 + (minuteAngle/2)), CHORD);
-   arc(100, 400, 88, 88,((minuteAngle/2))%180, (-1*(minuteAngle/2))%180, CHORD);
+   arc(-77, 400, 88, 88, -1*(180 + (minuteAngle/2)), (180 + (minuteAngle/2)), CHORD);
+   arc(77, 400, 88, 88,((minuteAngle/2))%180, (-1*(minuteAngle/2))%180, CHORD);
 
    //HOURS
    strokeWeight(8);
@@ -49,8 +55,8 @@ function setup() {
    arc(0, 0, 260, 260, 0, hourAngle);
    fill(150,255,100);
    strokeWeight(2);
-   arc(-100, 500, 88, 88, -1*(180 + (hourAngle/2)), (180 + (hourAngle/2)), CHORD);
-   arc(100, 500, 88, 88,((hourAngle/2))%180, (-1*(hourAngle/2))%180, CHORD);
+   arc(-77, 300, 88, 88, -1*(180 + (hourAngle/2)), (180 + (hourAngle/2)), CHORD);
+   arc(77, 300, 88, 88,((hourAngle/2))%180, (-1*(hourAngle/2))%180, CHORD);
      
    push();
    rotate(secondAngle);
@@ -72,6 +78,5 @@ function setup() {
 
    fill(255,255,255);
    point(0, 0);
-
 
  }
