@@ -6,6 +6,11 @@ function setup() {
  function draw() {
    background(0);
    translate(200, 200);
+   fill(255);
+   noStroke();
+   text(hr%12 + ':' + mn + ':' + sc, 0, 350);
+
+
    rotate(-90);
 
    let hr = hour();
@@ -67,11 +72,6 @@ function setup() {
 
    fill(255,255,255);
    point(0, 0);
-
-
-     fill(255);
-     noStroke();
-     text(hr%12 + ':' + mn + ':' + sc, 0, 350);
 
 
  }
