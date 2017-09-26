@@ -1,3 +1,7 @@
+//Alan Chan
+//Clock and Hourglass in P5.js
+//Inspired by Daniel Shiffman's Coding Train
+
 function setup() {
    createCanvas(800, 400);
    angleMode(DEGREES);
@@ -11,18 +15,17 @@ function setup() {
    let hr = hour();
    let mn = minute();
    let sc = second();
-   var MilSec = millis();
 
    fill(255,255,255);
    noStroke();
    textSize(22);
    text((hr%12) + ':' + mn + ':' + sc, -42, -175);
-    text((hr%12), 288, 0);
+   text((hr%12), 288, 0);
    text(mn, 388, 0);
-        text(sc, 488, 0);
+   text(sc, 488, 0);
 
 
-        rotate(-90);
+   rotate(-90);
 
      
    //SECONDS
@@ -58,6 +61,8 @@ function setup() {
    arc(-77, 300, 88, 88, -1*(180 + (hourAngle/2)), (180 + (hourAngle/2)), CHORD);
    arc(77, 300, 88, 88,((hourAngle/2))%180, (-1*(hourAngle/2))%180, CHORD);
      
+     
+   //Clock Hands
    push();
    rotate(secondAngle);
    stroke(255, 100, 150);
@@ -77,6 +82,15 @@ function setup() {
    pop();
 
    fill(255,255,255);
+   strokeWeight(8);
    point(0, 0);
+   stroke(255,255,255);
+   noFill();
+   ellipse(-77, 300,100,100);
+   ellipse(-77, 500,100,100);
+   ellipse(-77, 400,100,100);
+   ellipse(77, 300,100,100);
+   ellipse(77, 500,100,100);
+   ellipse(77, 400,100,100);
 
  }
