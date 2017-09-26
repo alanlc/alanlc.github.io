@@ -44,7 +44,7 @@ function setup() {
    arc(0, 0, 260, 260, 0, hourAngle);
    fill(150,255,100);
    strokeWeight(2);
-   arc(-100, 500, 88, 88, -1*(180 + (minuteAngle/2)), (180 + (minuteAngle/2)), CHORD);
+   arc(-100, 500, 88, 88, -1*(180 + (hourAngle/2)), (180 + (hourAngle/2)), CHORD);
    arc(100, 500, 88, 88,((hourAngle/2))%180, (-1*(hourAngle/2))%180, CHORD);
      
    push();
