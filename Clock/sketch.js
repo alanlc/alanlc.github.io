@@ -6,9 +6,9 @@ function setup() {
  function draw() {
    background(0);
    translate(200, 200);
-   fill(255);
-   noStroke();
-   text(hr%12 + ':' + mn + ':' + sc, 0, 350);
+   //fill(255);
+   //noStroke();
+   //text(hr%12 + ':' + mn + ':' + sc, 0, 350);
 
 
    rotate(-90);
