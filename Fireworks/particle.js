@@ -1,5 +1,5 @@
 function Particle(x, y, hu, firework) {
-
+colorMode(HSB);
 
   this.pos = createVector(x, y);
   this.firework = firework;
