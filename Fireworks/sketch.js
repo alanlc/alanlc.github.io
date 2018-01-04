@@ -3,14 +3,14 @@ var gravity;
 
 function setup() {
   createCanvas(1000, 500);
-  colorMode(HSB);
+  colorMode(HSL);
   gravity = createVector(0, 0.2);
   background(0,0,22,0.8);
 
 }
 
 function draw() {
-    colorMode(HSB);
+    colorMode(HSL);
     background(0,0,22,0.8);
 
   if (random(1) < 0.03) {
