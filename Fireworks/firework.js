@@ -1,5 +1,7 @@
 function Firework() {
 
+colorMode(HSL);
+ 
   this.hu = random(360);
   this.firework = new Particle(random(width), height, this.hu, true);
   this.exploded = false;
