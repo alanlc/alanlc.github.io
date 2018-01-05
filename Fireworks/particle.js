@@ -40,10 +40,12 @@ colorMode(HSL);
   this.show = function() {
     if (this.firework) {
             stroke(0,0,100,1);
+            fill(0,0,100,1);
             strokeWeight(4);
             point(this.pos.x, this.pos.y);
     } else {
             stroke(hu,100,50,0.5);
+            fill(hu,100,50,0.5);
             strokeWeight(2);
             point(this.pos.x, this.pos.y);
 
