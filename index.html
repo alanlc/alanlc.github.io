@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html>
-        <head>
-                <meta charset="utf-8">
-                <title>AlanLC Home (GitHub)</title>
-		<style>
-				
-body {
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
+	
 header nav {
   text-align: right;
   background: rgba(0,0,0,0.6);
@@ -37,98 +37,65 @@ header nav a:hover {
 .active {
   background: rgba(255,255,255,0.3);
 }
-
-.portion {
-  background-image:  url('photos/Beach.jpg');
-  background-position: center center;
+	
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
+
 }
-.portion.two {
-  background-image: url('photos/Ocean.jpg');
-}
-height: 50%;
-.portion h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 3em;
-  padding: 2em 0;
-  margin: 0;
-  text-shadow: 0 0 10px black;
-  background: rgba(0,0,0,0.6);
+.bgimg-1 {
+  background-image: url("photos/Beach.jpg");
+  min-height: 100%;
 }
 
-.info {
-  background: #FFFAF0;
-  color: #777;
-  padding: 0em 44px;
+.bgimg-2 {
+  background-image: url("photos/Ocean.jpg");
+  min-height: 400px;
 }
 
-.button {
-  text-align: center;
+.bgimg-3 {
+  background-image: url("photos/RAMcover.jpg");
+  min-height: 400px;
 }
-.button a {
-  display: inline-block;
-  border: 2px solid #777;
-  padding: .75em 1.5em;
-  color: #777;
-  text-decoration: none;
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
   text-transform: uppercase;
-  border-radius: 5px;
-  letter-spacing: .15em;
-  word-spacing: .25em;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-.button a:hover {
-  color: #FFFAF0;
-  background: #777;
-}
-footer.info {
-  color: #FFFAF0;
-  background: #777;
-  padding: 0 auto;
-  text-align: center;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
 
-#toTop img {
-  width: 50px;
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
-#toTop img:hover {
-  cursor: pointer;
-}
-nav img {
-  z-index: 1000;
-  height: 2.5em;
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  transition: all 0.5s linear;
-}
-
-.move {
-  top: -60px;
-}
-
-nav span {
-  position: absolute;
-  left: 40px;
-  top: 10px;
-  font-weight: bold;
-  transition: all 0.5s ease-in;
-}
-
-.movetext {
-  top: -30px;
-}
-
-
 </style>
-
-        </head>
+</head>
 <body>
-
 <header>
   <nav>
     <span class="movetext">Company Name</span>
@@ -139,59 +106,46 @@ nav span {
     <a href="#portion4">Portion4</a>
   </nav>
 </header>
-
-<div class="portion">
-  <h2>Portion 1.</h2>
-</div>
-
-<div id="portion1" class="info">
-  <h3>Heading for Portion 1</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis ut dicta quisquam officia deleniti, amet. Obcaecati atque, cumque quae culpa ad hic commodi provident pariatur, iure nobis voluptatibus laborum amet temporibus quia, dolores veritatis, repellendus consectetur. Ut ullam officiis minus quod assumenda facere quaerat, esse, magni, aliquid culpa vero.</p>
-  <div class="button">
-    <a href="#">Example Button</a>
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">SCROLL DOWN</span>
   </div>
 </div>
 
-<div class="portion two">
-  <h2>Portion 2</h2>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Parallax Demo</h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
 </div>
 
-<div id="portion2" class="info">
-  <h3>Heading for Portion 2</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora pariatur voluptate laboriosam impedit praesentium sed, nihil, dignissimos et minima recusandae quaerat enim consectetur. Molestiae assumenda distinctio, rem nostrum dolores repellendus.</p>
-  <div class="button">
-    <a href="#">Example Button</a>
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
   </div>
 </div>
 
-<div class="portion">
-  <h2>Portion 3.</h2>
-</div>
-
-<div id="portion3" class="info">
-  <h3>Heading for Portion 3.</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusamus in vitae saepe harum soluta reiciendis eaque repellat distinctio quos voluptate nemo error ratione numquam, nisi quibusdam veritatis repudiandae ea possimus rerum pariatur dolores? Optio inventore iusto, voluptatibus numquam aperiam, harum maxime beatae minima aliquam quas sapiente totam cumque unde..</p>
-  <div class="button">
-    <a href="#">Example Button</a>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
 </div>
 
-<div class="portion two">
-  <h2>Portion 4.</h2>
-</div>
-
-<div id="portion4" class="info">
-  <h3>Heading for Portion 4.</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni incidunt quos iste voluptates, tenetur ad repudiandae ea fuga eveniet quam, unde iure suscipit rem odit in, sint nulla itaque? Labore beatae, est voluptatibus saepe rerum illum repudiandae quasi perspiciatis, molestiae quidem fugiat voluptates voluptate neque totam earum enim mollitia iure quod tempora veritatis quam optio. Error odit laudantium eum voluptate.</p>
-  <div class="button">
-    <a href="#">Example Button</a>
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
   </div>
 </div>
-<footer class="info">
-  <div id="toTop"><a href="#"><img src="photos/RAMcover.jpg"></a></div>
-  <p>&copy; 2014 Arif Hussain Bangash</p>
-  
-</footer>
-	
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
+</div>
+
 </body>
 </html>
