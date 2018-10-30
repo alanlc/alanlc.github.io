@@ -5,33 +5,6 @@
 <link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <style>
 body, html {
   height: 100%;
@@ -168,8 +141,8 @@ h3 {
   color: #111;
 	}
 	
-
-.B1a {
+	.button {
+    background-color: #4CAF50; /* Green */
     border-radius: 8px;
     border: none;
     color: white;
@@ -182,175 +155,25 @@ h3 {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: ghostwhite; 
+}
+.button1 {
+    background-color: white; 
     color: black; 
-    border: 0px;
+    border: 2px solid #4CAF50;
 }
 
-.B1a:hover {
-    background-color: white;
+.button1:hover {
+    background-color: #4CAF50;
     color: white;
 }
-section {
-    min-height: 100%;
-}
 
 
-
-.B2a {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: lavender; 
-    color: black; 
-    border: 0px;
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
-
-.B2a:hover {
-    background-color: white;
-    color: white;
-}
-section {
-    min-height: 98%;
-}
-
-
-
-.B3a {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: lightcyan; 
-    color: black; 
-    border: 0px;
-}
-.B3a:hover {
-    background-color: white;
-    color: white;
-}
-section {
-    min-height: 98%;
-}
-.B4a {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: honeydew; 
-    color: black; 
-    border: 0px;
-}
-.B4a:hover {
-    background-color: white;
-    color: white;
-}
-section {
-    min-height: 98%;
-}
-
-
-
-.B5a {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: lightyellow; 
-    color: black; 
-    border: 0px;
-}
-.B5a:hover {
-    background-color: white;
-    color: white;
-}
-section {
-    min-height: 98%;
-}
-
-.B6a {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: lightsalmon; 
-    color: black; 
-    border: 0px;
-}
-.B6a:hover {
-    background-color: white;
-    color: white;
-}
-section {
-    min-height: 98%;
-}
-.B7a {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: lightcoral; 
-    color: black; 
-    border: 0px;
-}
-.B7a:hover {
-    background-color: white;
-    color: white;
-}
-section {
-    min-height: 98%;
-}
-
-
 </style>
 </head>
 
@@ -382,88 +205,50 @@ section {
     <a href="#about">About / Contact</a>
   </div>
 </div>
+	<p style = "text-size:22"><div class="bgimg-1"></p>
+<br />
+<p style="text-align: center; position: fixed; top:30%; width:100%; "> <h1>Recent</h1></p>
+	
+<center><button class="button button1"><a href="https://google.com">
+         Haiku
 
-<button class="B1 B1a">
-  <a style="color:black;margin-left:30px;text-decoration: none;
-    padding: 25px;" href="#section1">I am a being of light and love.
-    </a>
-  </button>
-  
-    <button class="B2 B2a">
-    <a style="color:black;margin-left:30px;text-decoration: none;padding: 25px;" href="#section2">I am open to new ideas.
-    </a>
-    </button>
-
-
-<button class="B3 B3a">
-<a style="color:black;margin-left:30px;text-decoration: none;padding: 25px;" href="#section3">I am powerful and I use my power wisely.
-</a>
-</button>
-
-<button class="B4 B4a">
-  <a style="color:black;margin-left:30px;text-decoration: none;
-    padding: 25px;" href="#section4">I am a being of light and love.
-    </a>
-  </button>
-  
-    <button class="B5 B5a">
-    <a style="color:black;margin-left:30px;text-decoration: none;padding: 25px;" href="#section5">I am open to new ideas.
-    </a>
-    </button>
-
-    <button class="B6 B6a">
-    <a style="color:black;margin-left:30px;text-decoration: none;padding: 25px;" href="#section6">Creativity is flowing through me.
-    </a>
-    </button>
-
-<button class="B7 B7a">
-<a style="color:black;margin-left:30px;text-decoration: none;padding: 25px;" href="#section7">I am strong.
-</a>
-</button>
-
-
-<div class="main">
-  <section></section>
+</a></button></center>
 </div>
 
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Parallax Demo</h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
 
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
 
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
 
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
 
-<div class="main" id="section1">
-  <section style="background-color:ghostwhite">
-  I am a being of light and love
-  </section>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
 </div>
-<div class="main" id="section2">
-  <section style="background-color:lavender">
-  I am open to new ideas
-  </section>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
 </div>
-<div class="main" id="section3">
-  <section style="background-color:lightcyan">
-  I am powerful, and I use my power wisely
-  </section>
-</div>
-<div class="main" id="section4">
-  <section style="background-color:honeydew">
-  I am loved, and I am loving
-  </section>
-</div>
-<div class="main" id="section5">
-  <section style="background-color:lightyellow;text-align: center;padding-top:100px;">
-  I can let go
-  </section>
-</div>
-<div class="main" id="section6">
-  <section style="background-color:lightsalmon">
-  Creativity is flowing through me
-  </section>
-</div>
-<div class="main" id="section7">
-  <section style="background-color:lightcoral">
-  I am strong
-  </section>
-</div>
+
 </body>
-
+</html>
