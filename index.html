@@ -5,8 +5,36 @@
 <link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <style>
 body, html {
+	padding-top:30px;
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Nixie One", sans-serif;
@@ -96,28 +124,7 @@ body, html {
     display: block;
 }
 	
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bgimg-1 {
-  background-image: url("photos/Beach.jpg");
-  top: 0;
-  min-height: 100%;
-}
-.bgimg-2 {
-  background-image: url("photos/Ocean.jpg");
-  min-height: 400px;
-}
-.bgimg-3 {
-  background-image: url("photos/RAMcover.jpg");
-  min-height: 400px;
-}
-	
+
 	
 .caption {
   position: absolute;
@@ -141,8 +148,8 @@ h3 {
   color: #111;
 	}
 	
-	.button {
-    background-color: #4CAF50; /* Green */
+
+.B1a {
     border-radius: 8px;
     border: none;
     color: white;
@@ -155,25 +162,196 @@ h3 {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-}
-.button1 {
-    background-color: white; 
+    background-color: ghostwhite; 
     color: black; 
-    border: 2px solid #4CAF50;
+    border: 0px;
 }
 
-.button1:hover {
-    background-color: #4CAF50;
+.B1a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+	position: relative;
+    min-height: 100%;
+}
+
+
+
+.B2a {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: lavender; 
+    color: black; 
+    border: 0px;
+}
+
+.B2a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+    min-height: 98%;
+}
+
+
+
+.B3a {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: lightcyan; 
+    color: black; 
+    border: 0px;
+}
+.B3a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+    min-height: 98%;
+}
+.B4a {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: honeydew; 
+    color: black; 
+    border: 0px;
+}
+.B4a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+    min-height: 98%;
+}
+
+
+
+.B5a {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: lightyellow; 
+    color: black; 
+    border: 0px;
+}
+.B5a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+    min-height: 98%;
+}
+
+.B6a {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: lightsalmon; 
+    color: black; 
+    border: 0px;
+}
+.B6a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+    min-height: 98%;
+}
+.B7a {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: lightcoral; 
+    color: black; 
+    border: 0px;
+}
+.B7a:hover {
+    background-color: white;
+    color: white;
+}
+section {
+    min-height: 98%;
+}
+.B8 {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: silver; 
+    color: black; 
+    border: 0px;
+}
+.B8:hover {
+    background-color: white;
     color: white;
 }
 
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
 </style>
 </head>
 
@@ -181,74 +359,148 @@ h3 {
 	
 <body>
 <div class="navbar">
-  <a href="#home">Home</a>
- <div class="dropdown">
-    <button class="dropbtn">Professional 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>   <div class="dropdown">
-    <button class="dropbtn">Personal 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div> 
+  <a href="https://www.alanlchan.com">Home</a>
+
       <div class="navbar-right">
-    <a href="#about">About / Contact</a>
-  </div>
-</div>
-	<p style = "text-size:22"><div class="bgimg-1"></p>
-<br />
-<p style="text-align: center; position: fixed; top:30%; width:100%; "> <h1>Recent</h1></p>
-	
-<center><button class="button button1"><a href="https://google.com">
-         Haiku
-
-</a></button></center>
-</div>
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Parallax Demo</h3>
-  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-</div>
-
-<div class="bgimg-2">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+    <a href="https://www.alanlchan.com">About / Contact</a>
   </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
+
+<center><h2 style= padding:4px;>Chakras</h2></center>
+
+
+
+<center><p><button class="B1 B1a">
+  <a style="color:black;text-align:center;text-decoration: none;padding: 25px;" href="#section1">1.
+    </a>
+  </button></p>
+  
+    <p><button class="B2 B2a">
+    <a style="color:black;text-align:center;text-decoration: none;padding: 25px;" href="#section2">2.
+    </a>
+    </button></p>
+
+
+<p><button class="B3 B3a">
+<a style="color:black;text-align:center;text-decoration: none;padding: 25px;" href="#section3">3.
+</a>
+</button></p>
+
+<p><button class="B4 B4a">
+  <a style="color:black;text-align:center;text-decoration: none;
+    padding: 25px;" href="#section4">4.
+    </a>
+  </button></p>
+  
+    <p><button class="B5 B5a">
+    <a style="color:black;text-align:center;text-decoration: none;padding: 25px;" href="#section5">5.
+    </a>
+    </button></p>
+
+    <p><button class="B6 B6a">
+    <a style="color:black;text-align:center;text-decoration: none;padding: 25px;" href="#section6">6.
+    </a>
+    </button></p>
+
+<p><button class="B7 B7a">
+<a style="color:black;text-align:center;text-decoration: none;padding: 25px;" href="#section7">7.
+</a>
+</button></p></center>
+
+
+<div class="main">
+  <section style=margin-top:20%;margin-bot:50%;></section>
 </div>
 
-<div class="bgimg-3">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-  </div>
+
+
+
+
+<div class="main" id="section1">
+  <section style="background-color:ghostwhite;text-align: center;padding-top:50%;padding-bottom:50%">
+  <p>1. Crown Chakra.</p>
+  <p><img src="https://www.starchaser-healingarts.com/wp-content/uploads/thumbnail4.jpg" style = "width:100px;height:100px;"></p>
+    <p>"I am a being of light and love."</p>
+    <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center>
+  </section>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
+
+<div class="main" id="section2">
+  <section style="background-color:lavender;text-align: center;padding-top:50%;padding-bottom:50%">
+  <p>2. Third Eye Chakra.</p>
+  <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwDuHVyUv2mV-4sgHNUgmdXh-z1KU6nedykqde1LNErBXqbgqweA" style = "width:100px;height:100px;"></p>
+    <p>"I am open to new ideas."</p>
+  <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center></section>
 </div>
 
-<div class="bgimg-1">
-  <div class="caption">
-    <span class="border">COOL!</span>
-  </div>
+
+<div class="main" id="section3">
+  <section style="background-color:lightcyan;text-align: center;padding-top:50%;padding-bottom:50%">
+  <p>3. Throat Chakra.</p>
+  <p><img src="https://cdn.shopify.com/s/files/1/0750/2743/products/IMG_0094_394x.JPG?v=1532607046" style = "width:100px;height:100px;"></p>
+    <p>"I am powerful, and I use my power wisely."</p>
+  <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center></section>
 </div>
 
+
+<div class="main" id="section4">
+  <section style="background-color:honeydew;text-align: center;padding-top:50%;padding-bottom:50%">
+   <p>4. Heart Chakra.</p>
+  <p><img src="https://awakenmindset.com/wp-content/uploads/2017/07/Heart-Chakra-Anahata-1024x1024.jpg?189db0&189db0" style = "width:100px;height:100px;"></p>
+    <p>"I am loved, and I am loving."</p>
+  <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center></section>
+</div>
+
+
+<div class="main" id="section5">
+  <section style="background-color:lightyellow;text-align: center;padding-top:50%;padding-bottom:50%">
+  <p>5. Solar Plexus Chakra.</p>
+  <p><img src="https://awakenmindset.com/wp-content/uploads/2017/07/Solar-Plexus-Chakra-1024x1024.jpg" style = "width:100px;height:100px;"></p>
+    <p>"I can let go."</p>
+  <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center></section>
+</div>
+
+
+<div class="main" id="section6">
+  <section style="background-color:lightsalmon;text-align: center;padding-top:50%;padding-bottom:50%">
+  <p>6. Sacral Chakra.</p>
+  <p><img src="http://www.chakras.info/wp-content/uploads/Overactive-Sacral-Chakra-1.jpg" style = "width:100px;height:100px;"></p>
+    <p>"Creativity is flowing through me"</p>
+  <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center></section>
+</div>
+
+
+<div class="main" id="section7">
+  <section style="background-color:lightcoral;text-align: center;padding-top:50%;padding-bottom:50%">
+  <p>7. Root Chakra.</p>
+  <p><img src="https://awakenmindset.com/wp-content/uploads/2017/07/Root-Chakra-Picture.jpg" style = "width:100px;height:100px;"></p>
+    <p>"I am strong"</p>
+  <center><p><button class="B8">
+<a style="color:black;text-align:center;text-decoration: none;padding: 4px;" href="#">Top
+</a>
+</button></p></center></section>
+
+
+</div>
 </body>
-</html>
+
